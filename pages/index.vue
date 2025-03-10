@@ -1,6 +1,8 @@
 <script setup>
+const has_storyblok = useRoute().query._storyblok;
+
 const story = await useStoryblok("home", {
-    version: useRoute().query._storyblok ? "draft" : "published",
+    version: has_storyblok ? "draft" : "published",
     resolve_relations: "featuredProjects.projects",
 });
 </script>
