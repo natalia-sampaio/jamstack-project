@@ -1,0 +1,19 @@
+{
+    "name": "nuxt-app",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "dev-https": "local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem & nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
+    },
+    "dependencies": {
+        "@storyblok/nuxt": "^6.2.3",
+        "nuxt": "^3.16.0",
+        "vue": "^3.5.13",
+        "vue-router": "^4.5.0"
+    }
+}
